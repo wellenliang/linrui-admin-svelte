@@ -1,0 +1,56 @@
+{
+	"name": "linrui-admin-svelte",
+	"version": "0.0.1",
+	"description": "admin templates for svelte",
+	"type": "module",
+	"packageManager": "pnpm@8.15.5",
+	"keywords": [
+		"svelte",
+		"admin",
+		"svelte-admin",
+		"svelte-kit"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/wellenliang/linrui-admin-svelte.git",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wellenliang/linrui-admin-svelte.git"
+	},
+	"bugs": {
+		"url": "https://github.com/wellenliang/linrui-admin-svelte/issues"
+	},
+	"scripts": {
+		"init": "pnpm i",
+		"lint": "prettier --check \"./**/*.{svelte, js, ts, tsx, jsx, json, md}\" && eslint .",
+		"format": "prettier --write \"./**/*.{svelte, js, ts, tsx, jsx, json, md}\"",
+		"prepare": "npx simple-git-hooks"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^2.13.3",
+		"@types/node": "^20.12.7",
+		"@typescript-eslint/eslint-plugin": "^7.6.0",
+		"@typescript-eslint/parser": "^7.6.0",
+		"eslint": "^9.0.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.37.0",
+		"jsdom": "^24.0.0",
+		"lint-staged": "^15.2.2",
+		"prettier": "^3.2.5",
+		"prettier-plugin-svelte": "^3.2.3",
+		"rimraf": "^5.0.5",
+		"simple-git-hooks": "^2.11.1",
+		"typescript": "^5.4.5"
+	},
+	"engines": {
+		"node": ">= 14"
+	},
+	"lint-staged": {
+		"*.{svelte, js, ts, jsx, tsx, json}": [
+			"prettier --write",
+			"eslint"
+		]
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged"
+	}
+}
