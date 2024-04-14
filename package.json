@@ -24,8 +24,8 @@
 	},
 	"scripts": {
 		"init": "pnpm i",
-		"dev:admin-melt": "pnpm run --filter linrui-admin-melt-ui dev",
-		"build:admin-melt": "pnpm run --filter linrui-admin-melt-ui build",
+		"dev:admin-melt": "pnpm run --filter linrui-admin-melt dev",
+		"build:admin-melt": "pnpm run --filter linrui-admin-melt build",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"prepare": "npx simple-git-hooks"

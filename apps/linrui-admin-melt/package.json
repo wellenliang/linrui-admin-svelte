@@ -1,5 +1,5 @@
 {
-	"name": "linrui-admin-melt-ui",
+	"name": "linrui-admin-melt",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
@@ -11,15 +11,19 @@
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
+		"@melt-ui/pp": "^0.3.0",
+		"@melt-ui/svelte": "^0.76.3",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@unocss/extractor-svelte": "^0.59.2",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^7.5.0",
+		"unocss": "^0.59.2",
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
